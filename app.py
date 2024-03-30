@@ -1,10 +1,6 @@
 import json
 import openai
 import streamlit as st
-import os
-from dotenv import load_dotenv
-load_dotenv()
-import ast
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 created_style = """
