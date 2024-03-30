@@ -37,7 +37,7 @@ def generate_theoretical_questions(topic, number, difficulty):
   6_Hardest questions:
    If the use selects the hardest difficulty then generate so much difficult questions that should be almost impossible to answer for a normal student.
   """
-    user_content = {f"topic: \"{topic}\", number = \"{number}\", difficulty = \"{difficulty}\""}
+    user_content = {f"topic: \"{topic}\", number : \"{number}\", difficulty : \"{difficulty}\""}
     user_content = str(user_content)
     messages = [
         {'role': 'system', 'content': system_content},
@@ -58,7 +58,7 @@ def theoretical_answers_checker(answer, question):
     {question: "Define Artificial Intelligence?", answer: "Artificial intelligence is the science of making machins that can think like humans. It can do things that are considered smarter than humans. It can do anything else that humans can do."}
     And
     Your output format should be as follows:
-    {"marks": 7, "mistakes" = "1_There is a spelling mistake in your answer: machins
+    {"marks": 7, "mistakes": "1_There is a spelling mistake in your answer: machins
       2_You write that it can do anything else that humans can do. It is a wrong concept.", "feedback_and_corrections" = "Correction 1: It is machines instead of machins. 
       Correction 2: So far AI is not that much strong and mature that it could do anything which humans can do. It is may be possible in the future but not yet possible."}
     1. Ensure that the answer directly addresses the question asked and provides relevant information.
